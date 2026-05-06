@@ -126,3 +126,13 @@ In this exercise, the proposal execution threshold is 10 yes votes.
 The contract tracks each member's vote state so changing a vote can update the yes and no counts correctly.
 
 Exercise goal: update `castVote` so that once a proposal reaches 10 yes votes, the contract executes the proposal by calling the target address with the proposal data. The proposal must not execute more than once.
+
+## Inheritance: Multiple Inheritance
+
+Solidity contracts can inherit from multiple base contracts by listing them after `is`.
+
+Example: `contract Derived is Base1, Base2` gives `Derived` access to inherited state and functions from both base contracts.
+
+Inheritance order matters, especially when one inherited contract already inherits from another.
+
+Exercise goal: create a `Transferable` contract that allows the current owner to transfer ownership to a new address, then let `Collectible` use that ownership and transfer behavior.
