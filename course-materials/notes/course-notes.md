@@ -70,3 +70,13 @@ Example order: if a modifier logs `before`, then uses `_`, then logs `after`, th
 Modifiers are useful for repeated checks such as access control. An `onlyOwner` modifier can require `msg.sender == owner` before allowing configuration functions to continue.
 
 Exercise goal: update the `onlyOwner` modifier so only the owner address can call `setA`, `setB`, and `setC`.
+
+## Calldata: Fallback
+
+Each external function call starts with a function selector, which is the first four bytes of the hash of the function signature.
+
+If calldata sent to a contract does not match any function selector, Solidity can route the call to the contract's `fallback` function if one exists.
+
+This can happen when calldata is random, shorter than four bytes, longer than expected, or simply does not match a function identifier.
+
+Exercise goal: in `Sidekick.makeContact`, send calldata to the `Hero` contract that does not match any function selector so the `Hero` fallback function updates `lastContact`.
