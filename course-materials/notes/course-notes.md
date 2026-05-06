@@ -22,3 +22,11 @@ Alternative course option: Smart Contract Development with Solidity on Cyfrin Up
 ## Chosen Course
 
 Learn Solidity by Alchemy University.
+
+## Smart Contracts Overview
+
+Smart contracts are programs deployed on a blockchain. Users and applications communicate with them by sending transactions or making read-only calls.
+
+At a high level, smart contract execution is handled by the Ethereum Virtual Machine. Solidity code is compiled down into EVM opcodes, and those opcodes determine how the contract behaves.
+
+Gas is calculated deterministically based on the opcodes used. Simple opcodes such as `ADD` or `MUL` have fixed gas costs. More complex opcodes such as `SSTORE` depend on additional factors, including storage changes and possible gas refunds when clearing a storage slot.
