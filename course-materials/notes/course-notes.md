@@ -30,3 +30,13 @@ Smart contracts are programs deployed on a blockchain. Users and applications co
 At a high level, smart contract execution is handled by the Ethereum Virtual Machine. Solidity code is compiled down into EVM opcodes, and those opcodes determine how the contract behaves.
 
 Gas is calculated deterministically based on the opcodes used. Simple opcodes such as `ADD` or `MUL` have fixed gas costs. More complex opcodes such as `SSTORE` depend on additional factors, including storage changes and possible gas refunds when clearing a storage slot.
+
+## Enum Type
+
+Enums help make Solidity code clearer by replacing unexplained numeric values with named options.
+
+Example: instead of checking whether `player.movement == 0`, an enum can define readable options such as `Directions.Up`, `Directions.Left`, `Directions.Down`, and `Directions.Right`.
+
+This makes the code easier to understand and safer to share across contracts because the named enum values become the agreed structure.
+
+Exercise goal: create an enum named `Foods` with four food values and store them in `food1`, `food2`, `food3`, and `food4`.
