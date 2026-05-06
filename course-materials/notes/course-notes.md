@@ -80,3 +80,13 @@ If calldata sent to a contract does not match any function selector, Solidity ca
 This can happen when calldata is random, shorter than four bytes, longer than expected, or simply does not match a function identifier.
 
 Exercise goal: in `Sidekick.makeContact`, send calldata to the `Hero` contract that does not match any function selector so the `Hero` fallback function updates `lastContact`.
+
+## Escrow: Events
+
+Events let servers, front ends, and indexing tools listen for important blockchain activity without constantly reading every contract state variable.
+
+An event is declared with the `event` keyword and written to the transaction logs with `emit`.
+
+Example: `event MyEvent(address);` and `emit MyEvent(msg.sender);`.
+
+Exercise goal: create an `Approved(uint256 balance)` event in the Escrow contract and emit it from `approve` after the beneficiary receives the escrow balance.
