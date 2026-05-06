@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+artifacts/
+cache/
+typechain/
+typechain-types/
+dist/
+build/
+out/
+
+# Coverage
+coverage/
+coverage.json
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Package manager caches
+.npm/
+.yarn/
+.pnpm-store/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Hardhat and Foundry
+deployments/
+broadcast/
+lib/
+
+# Temporary files
+tmp/
+temp/
