@@ -90,3 +90,11 @@ An event is declared with the `event` keyword and written to the transaction log
 Example: `event MyEvent(address);` and `emit MyEvent(msg.sender);`.
 
 Exercise goal: create an `Approved(uint256 balance)` event in the Escrow contract and emit it from `approve` after the beneficiary receives the escrow balance.
+
+## Structs: Change Vote
+
+Structs let Solidity group related values into one custom data structure.
+
+In this exercise, each `Vote` stores both the selected `Choices` enum value and the voter address.
+
+The `changeVote` function must find the existing vote for `msg.sender`, update its stored choice, and revert if the caller has not voted yet.
