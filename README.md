@@ -12,10 +12,12 @@ Submission deadline: May 06, 2026
 
 ## Team Members
 
-- Abdi Sileshi
-- Milki Alemu
-- Miraf Amare
-- Yohanan Solomon
+| Name | ID | Section | Year |
+| :--- | :--- | :--- | :--- |
+| Abdi Sileshi | UGR/25299/14 | Section 1 | 5th Year |
+| Miraf Amare | UGR/25308/14 | Section 1 | 5th Year |
+| Yohanan Solomon | UGR/25476/14 | Section 1 | 5th Year |
+| Milki Alemu | UGR/25517/14 | Section 1 | 5th Year |
 
 ## Folder Structure
 
