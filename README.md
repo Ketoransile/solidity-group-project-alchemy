@@ -18,6 +18,7 @@ Submission deadline: May 06, 2026
 | Miraf Amare | UGR/25308/14 | Section 1 | 5th Year |
 | Yohanan Solomon | UGR/25476/14 | Section 1 | 5th Year |
 | Milki Alemu | UGR/25517/14 | Section 1 | 5th Year |
+| Fitsum Teka | TBD | Section 1 | 5th Year |
 
 ## Folder Structure
 
