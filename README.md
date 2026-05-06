@@ -1,10 +1,14 @@
 # Solidity Group Project Alchemy
 
-This repository is a local scaffold for a Solidity group assignment. It is organized for collecting course materials, individual practice work, screenshots, and the final shared project.
+This repository is for a Solidity group laboratory assignment. It is organized for collecting course materials, individual practice work, screenshots, and the final shared project.
 
 ## Course
 
-Chosen course: Solidity smart contract development.
+Chosen course: Learn Solidity by Alchemy University.
+
+Course link: https://www.alchemy.com/university/courses/solidity
+
+Submission deadline: May 06, 2026
 
 ## Team Members
 
