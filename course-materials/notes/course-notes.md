@@ -50,3 +50,13 @@ Example: `add(uint x, uint y)` and `add(uint x, uint y, uint z)` can both exist 
 Solidity functions can also return multiple values by using tuples, such as `returns (uint, uint)`.
 
 Exercise goal: create an overloaded `double` function that accepts two `uint` parameters, doubles both values, and returns both results in the same order.
+
+## Sending Ether: Self Destruct
+
+The EVM has a `SELFDESTRUCT` opcode that can remove a contract's code and send the contract's remaining ether balance to a target address.
+
+In Solidity, `selfdestruct` requires a payable address argument. This is why an address such as `msg.sender` or a stored charity address must be cast with `payable(...)`.
+
+Example idea: after a countdown reaches zero, a contract can call `selfdestruct(payable(msg.sender))`, sending its remaining ether to the final caller.
+
+Exercise goal: update the `donate` function so it destroys the contract and sends the full remaining balance to the charity address.
