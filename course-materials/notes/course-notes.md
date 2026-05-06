@@ -98,3 +98,11 @@ Structs let Solidity group related values into one custom data structure.
 In this exercise, each `Vote` stores both the selected `Choices` enum value and the voter address.
 
 The `changeVote` function must find the existing vote for `msg.sender`, update its stored choice, and revert if the caller has not voted yet.
+
+## Arrays: Stack Club 2
+
+Storage arrays support `push` for adding elements and `pop` for removing the last element.
+
+Calling `pop` removes the final item in the array and reduces the array length by one.
+
+Exercise goal: create a Stack Club contract where the deployer is added as the first member, existing members can add new members, and existing members can remove the most recently added member.
