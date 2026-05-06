@@ -15,8 +15,6 @@ coverage/
 coverage.json
 
 # Environment files
-.env
-.env.*
 !.env.example
 
 # Logs
@@ -32,7 +30,6 @@ pnpm-debug.log*
 .pnpm-store/
 
 # IDE and OS files
-.vscode/
 .idea/
 .DS_Store
 Thumbs.db
@@ -45,3 +42,8 @@ lib/
 # Temporary files
 tmp/
 temp/
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
+config.bat
