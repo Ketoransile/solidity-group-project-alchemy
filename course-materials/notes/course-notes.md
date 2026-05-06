@@ -106,3 +106,13 @@ Storage arrays support `push` for adding elements and `pop` for removing the las
 Calling `pop` removes the final item in the array and reduces the array length by one.
 
 Exercise goal: create a Stack Club contract where the deployer is added as the first member, existing members can add new members, and existing members can remove the most recently added member.
+
+## Mappings: Nested Maps
+
+Mappings can store other mappings as their values, creating nested lookup tables.
+
+Example: `mapping(uint256 => mapping(address => bool))` can store a separate boolean vote for each address under each vote id.
+
+Nested mappings are useful when one key needs to point to another key-value relationship.
+
+Exercise goal: create a public nested mapping named `connections` that maps one address to another address and stores a `ConnectionTypes` enum value.
