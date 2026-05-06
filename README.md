@@ -1,4 +1,4 @@
-# Solidity Group Project
+# Solidity Group Project Alchemy
 
 This repository is a local scaffold for a Solidity group assignment. It is organized for collecting course materials, individual practice work, screenshots, and the final shared project.
 
