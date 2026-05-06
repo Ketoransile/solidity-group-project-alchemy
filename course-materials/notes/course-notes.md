@@ -116,3 +116,13 @@ Example: `mapping(uint256 => mapping(address => bool))` can store a separate boo
 Nested mappings are useful when one key needs to point to another key-value relationship.
 
 Exercise goal: create a public nested mapping named `connections` that maps one address to another address and stores a `ConnectionTypes` enum value.
+
+## Voting Contract: Execute
+
+Governance contracts often require a minimum amount of voting participation before a proposal can be executed.
+
+In this exercise, the proposal execution threshold is 10 yes votes.
+
+The contract tracks each member's vote state so changing a vote can update the yes and no counts correctly.
+
+Exercise goal: update `castVote` so that once a proposal reaches 10 yes votes, the contract executes the proposal by calling the target address with the proposal data. The proposal must not execute more than once.
