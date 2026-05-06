@@ -60,3 +60,13 @@ In Solidity, `selfdestruct` requires a payable address argument. This is why an 
 Example idea: after a countdown reaches zero, a contract can call `selfdestruct(payable(msg.sender))`, sending its remaining ether to the final caller.
 
 Exercise goal: update the `donate` function so it destroys the contract and sends the full remaining balance to the charity address.
+
+## Learning Revert: Owner Modifier
+
+Function modifiers can run logic before and/or after a function body. The `_` symbol inside a modifier marks where the modified function's body executes.
+
+Example order: if a modifier logs `before`, then uses `_`, then logs `after`, the function body runs between those two modifier statements.
+
+Modifiers are useful for repeated checks such as access control. An `onlyOwner` modifier can require `msg.sender == owner` before allowing configuration functions to continue.
+
+Exercise goal: update the `onlyOwner` modifier so only the owner address can call `setA`, `setB`, and `setC`.
