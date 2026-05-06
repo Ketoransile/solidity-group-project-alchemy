@@ -40,3 +40,13 @@ Example: instead of checking whether `player.movement == 0`, an enum can define 
 This makes the code easier to understand and safer to share across contracts because the named enum values become the agreed structure.
 
 Exercise goal: create an enum named `Foods` with four food values and store them in `food1`, `food2`, `food3`, and `food4`.
+
+## Solidity Functions: Double Overload
+
+Solidity allows function overloading, which means a contract can have multiple functions with the same name as long as their parameter lists are different.
+
+Example: `add(uint x, uint y)` and `add(uint x, uint y, uint z)` can both exist because Solidity chooses the correct function based on the arguments passed.
+
+Solidity functions can also return multiple values by using tuples, such as `returns (uint, uint)`.
+
+Exercise goal: create an overloaded `double` function that accepts two `uint` parameters, doubles both values, and returns both results in the same order.
